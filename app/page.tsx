@@ -2,6 +2,7 @@ import Button from '@/components/button/Button'
 import styles from './page.module.css'
 import Image from 'next/image'
 import ProjectLink from '@/components/projectLink/ProjectLink'
+import ContactCard from '@/components/contactCard/ContactCard'
 
 export default function Home() {
   return (
@@ -143,6 +144,8 @@ export default function Home() {
         </div>
 
       </section>
+
+      <ContactCard />
       
     </main>
   )

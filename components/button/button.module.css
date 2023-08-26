@@ -9,12 +9,20 @@
     letter-spacing: 1px;
 }
 
-.white {
+.white,
+.white > a {
     color: var(--clr-dark-grey);
+}
+
+.white {
     background-color: var(--clr-white);
 }
 
-.peach {
+.peach,
+.peach > a {
     color: var(--clr-white);
+}
+
+.peach {
     background-color: var(--clr-peach-pri);
 }

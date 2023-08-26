@@ -1,0 +1,34 @@
+.card {
+    position: relative;
+    margin-inline: 24px;
+    padding-inline: 24px;
+    padding-block: 64px;
+    text-align: center;
+    color: var(--clr-white);
+    background-color: var(--clr-peach-pri);
+    background-image: url(/bg-pattern-call-to-action.svg);
+    background-position: center;
+    background-size: 300%;
+    border-radius: var(--radius-element);
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+    left: -24px;
+    width: calc(100% + 48px);
+    background-color: var(--clr-black);
+    z-index: -1;
+}
+
+.card h2 {
+    font-size: 32px;
+    line-height: var(--line-height-h2);
+    margin-bottom: 16px;
+}
+
+.card > div {
+    margin-bottom: 26px;
+}
