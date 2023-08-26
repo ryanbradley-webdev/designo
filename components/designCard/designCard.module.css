@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-element);
+    overflow: hidden;
+}
+
+.card img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card > div {
+    display: grid;
+    row-gap: 16px;
+    padding-inline: 30px;
+    padding-block: 32px;
+    text-align: center;
+    background-color: #FDF3F0;
+}
+
+.card h3 {
+    color: var(--clr-peach-pri);
+}

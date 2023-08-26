@@ -1,0 +1,17 @@
+.design_links,
+.card_grid {
+    margin-block: 96px;
+}
+
+.design_links {
+    display: grid;
+    row-gap: 24px;
+    margin-inline: auto;
+    max-width: 327px;
+}
+
+.card_grid {
+    display: grid;
+    row-gap: 40px;
+    padding-inline: 24px;
+}
