@@ -40,6 +40,7 @@ export default function Header() {
 
             <Menu
                 isVisible={menuVisibile}
+                toggleMenu={toggleMenu}
             />
 
         </header>
