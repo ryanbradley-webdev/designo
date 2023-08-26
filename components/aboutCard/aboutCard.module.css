@@ -1,0 +1,53 @@
+.card::before {
+    content: '';
+    display: block;
+    height: 320px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.card {
+    text-align: center;
+    color: var(--clr-dark-grey);
+    background-color: #FDF3F0;
+}
+
+.card h1,
+.card h2 {
+    margin-bottom: 24px;
+}
+
+.card h2 {
+    font-size: var(--font-size-h1);
+    color: var(--clr-peach-pri);
+}
+
+.card:has(h1) {
+    color: var(--clr-white);
+    background-color: var(--clr-peach-pri);
+}
+
+.card > div {
+    padding-block: 80px;
+    padding-inline: 24px;
+}
+
+.card:has(h1) > div {
+    background-image: url(./images/bg-pattern-hero-about-mobile.svg);
+    background-size: 200%;
+    background-position: right -150px;
+}
+
+.card:has(h1)::before {
+    background-image: url(./images/image-about-hero-mobile.jpg)
+}
+
+.card:nth-of-type(2)::before {
+    background-image: url(./images/image-world-class-talent-mobile.jpg)
+}
+
+.card:last-of-type::before {
+    background-image: url(./images/image-real-deal-mobile.jpg)
+}
