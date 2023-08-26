@@ -48,6 +48,6 @@
     background-image: url(./images/image-world-class-talent-mobile.jpg)
 }
 
-.card:last-of-type::before {
+.card:nth-of-type(3)::before {
     background-image: url(./images/image-real-deal-mobile.jpg)
 }

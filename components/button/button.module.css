@@ -4,7 +4,10 @@
     padding-block: 18px;
     border: none;
     border-radius: var(--radius-btn);
-    font-size: var(--font-size-body);
+}
+
+.button > a {
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 1px;
 }
