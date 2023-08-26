@@ -32,3 +32,12 @@ html {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
 }
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh;
+}
