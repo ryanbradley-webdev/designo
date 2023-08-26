@@ -33,3 +33,11 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.projects {
+    display: grid;
+    justify-items: center;
+    row-gap: 24px;
+    margin-block: 120px;
+    padding-inline: 24px;
+}

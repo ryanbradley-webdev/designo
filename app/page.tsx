@@ -1,6 +1,7 @@
 import Button from '@/components/button/Button'
 import styles from './page.module.css'
 import Image from 'next/image'
+import ProjectLink from '@/components/projectLink/ProjectLink'
 
 export default function Home() {
   return (
@@ -38,6 +39,33 @@ export default function Home() {
           height={913}
           width={624}
         />
+
+      </section>
+
+      <section
+        className={styles.projects}
+      >
+
+        <ProjectLink
+          background='web'
+          href='/web-design'
+        >
+          WEB DESIGN
+        </ProjectLink>
+
+        <ProjectLink
+          background='app'
+          href='/app-design'
+        >
+          APP DESIGN
+        </ProjectLink>
+
+        <ProjectLink
+          background='graphic'
+          href='/graphic-design'
+        >
+          GRAPHIC DESIGN
+        </ProjectLink>
 
       </section>
       

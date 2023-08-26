@@ -1,0 +1,48 @@
+.link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 250px;
+    width: 100%;
+    max-width: 327px;
+    border-radius: var(--radius-element);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #00000080;
+    z-index: -1;
+}
+
+.link[data-variant='web'] {
+    background-image: url(./background-images/image-web-design-mobile.jpg);
+}
+
+.link[data-variant='app'] {
+    background-image: url(./background-images/image-app-design-mobile.jpg);
+}
+
+.link[data-variant='graphic'] {
+    background-image: url(./background-images/image-graphic-design-mobile.jpg);
+}
+
+.link p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.link p::after {
+    content: url(/icon-right-arrow.svg);
+    margin-left: 16px;
+}
