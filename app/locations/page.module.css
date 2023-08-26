@@ -1,0 +1,24 @@
+.location {
+    display: grid;
+    margin-bottom: 40px;
+}
+
+.location img {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.location > div {
+    display: grid;
+    row-gap: 24px;
+    padding-inline: 24px;
+    padding-block: 80px;
+    text-align: center;
+    color: var(--clr-dark-grey);
+    background-color: #FDF3F0;
+}
+
+.location h2 {
+    color: var(--clr-peach-pri);
+}

@@ -1,9 +1,9 @@
 'use client'
 
+import { useMediaQuery } from 'usehooks-ts'
+import Image from 'next/image'
 import ContactCard from '@/components/contactCard/ContactCard'
 import styles from './page.module.css'
-import Image from 'next/image'
-import { useMediaQuery } from 'usehooks-ts'
 
 export default function Locations() {
     const largeScreen = useMediaQuery('(min-width: 769px)')
@@ -13,7 +13,9 @@ export default function Locations() {
             className={styles.main}
         >
 
-            <section>
+            <section
+                className={styles.location}
+            >
 
                 <Image
                     src={largeScreen ? '/image-map-canada-desktop.png' : '/image-map-canada-tablet.png'}
@@ -64,7 +66,9 @@ export default function Locations() {
 
             </section>
 
-            <section>
+            <section
+                className={styles.location}
+            >
 
                 <Image
                     src={largeScreen ? '/image-map-australia-desktop.png' : '/image-map-australia-tablet.png'}
@@ -115,7 +119,9 @@ export default function Locations() {
 
             </section>
 
-            <section>
+            <section
+                className={styles.location}
+            >
 
                 <Image
                     src={largeScreen ? '/image-map-united-kingdom-desktop.png' : '/image-map-united-kingdom-tablet.png'}
