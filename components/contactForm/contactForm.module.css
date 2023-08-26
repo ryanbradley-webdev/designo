@@ -60,6 +60,7 @@
     color: var(--clr-white);
     background-color: transparent;
     border: none;
+    border-radius: 0;
     border-bottom: 1px solid var(--clr-white);
     font-size: 15px;
     font-weight: 500;
