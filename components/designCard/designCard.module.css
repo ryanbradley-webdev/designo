@@ -1,6 +1,5 @@
 .card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     border-radius: var(--radius-element);
     overflow: hidden;
 }
@@ -12,8 +11,20 @@
     object-position: top;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .card img {
+        height: 310px;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .card > div {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     row-gap: 16px;
     padding-inline: 30px;
     padding-block: 32px;

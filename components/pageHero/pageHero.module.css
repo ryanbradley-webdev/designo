@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 24px;
     padding-inline: 24px;
+    max-width: 1152px;
     height: 320px;
     color: var(--clr-white);
     text-align: center;
@@ -12,4 +13,17 @@
     background-image: url(/bg-pattern-design-pages-intro-mobile.svg);
     background-size: 220%;
     background-position: top right;
+}
+
+@media screen and (min-width: 481px) {
+    .hero {
+        margin-inline: 24px;
+        border-radius: var(--radius-element);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        margin-inline: auto;
+    }
 }
