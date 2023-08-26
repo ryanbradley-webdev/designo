@@ -8,7 +8,9 @@ export default function Footer() {
             className={styles.footer}
         >
 
-            <div>
+            <div
+                className={styles.heading}
+            >
 
                 <Image
                     src='/logo-light.png'
@@ -41,9 +43,13 @@ export default function Footer() {
 
             </div>
 
-            <div>
+            <div
+                className={styles.contact}
+            >
 
-                <div>
+                <div
+                    className={styles.address}
+                >
 
                     <strong>
                         Designo Central Office
@@ -59,7 +65,9 @@ export default function Footer() {
 
                 </div>
 
-                <div>
+                <div
+                    className={styles.numbers}
+                >
 
                     <strong>
                         Contact Us (Central Office)
@@ -75,7 +83,9 @@ export default function Footer() {
 
                 </div>
 
-                <div>
+                <div
+                    className={styles.socials}
+                >
 
                     <Link
                         href='/'

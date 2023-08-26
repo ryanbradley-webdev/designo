@@ -9,12 +9,12 @@
   --font-size-h2: 40px;
   --font-size-h3: 20px;
   --font-size-body: 16px;
-  --font-size-link: 24px;
+  --font-size-link: 14px;
   --line-height-h1: 48px;
   --line-height-h2: 48px;
   --line-height-h3: 26px;
   --line-height-body: 26px;
-  --line-height-link: 25px;
+  --line-height-link: 14px;
   --space-h2: 2px;
   --space-h3: 5px;
   --space-link: 2px;
@@ -43,4 +43,12 @@ body {
 
 main {
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: var(--font-size-link);
+  line-height: var(--line-height-link);
+  letter-spacing: var(--space-link);
 }
