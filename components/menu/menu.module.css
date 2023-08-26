@@ -1,0 +1,42 @@
+.menu {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    display: grid;
+    row-gap: 32px;
+    width: 100%;
+    padding-inline: 24px;
+    padding-block: 48px;
+    background-color: var(--clr-black);
+    z-index: -5;
+    transition: top 0.2s ease-in-out;
+}
+
+.menu[aria-hidden='false'] {
+    top: 96px;
+}
+
+.menu::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    top: 96px;
+    background-color: #00000052;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.menu[aria-hidden='false']::after {
+    opacity: 1;
+}
+
+.menu > a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: var(--font-size-link);
+    line-height: var(--line-height-link);
+    letter-spacing: var(--space-link);
+    z-index: 5;
+}

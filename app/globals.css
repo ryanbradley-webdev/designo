@@ -9,12 +9,15 @@
   --font-size-h2: 40px;
   --font-size-h3: 20px;
   --font-size-body: 16px;
+  --font-size-link: 24px;
   --line-height-h1: 48px;
   --line-height-h2: 48px;
   --line-height-h3: 26px;
   --line-height-body: 26px;
+  --line-height-link: 25px;
   --space-h2: 2px;
   --space-h3: 5px;
+  --space-link: 2px;
   --font-weight-head: 500;
   --radius-btn: 8px;
   --radius-element: 15px;

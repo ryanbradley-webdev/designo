@@ -1,5 +1,53 @@
 .header {
     position: sticky;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 24px;
+    height: 96px;
     background-color: var(--clr-white);
+    z-index: 20;
+    isolation: isolate;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-white);
+    z-index: -1;
+}
+
+.menu_btn {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+}
+
+.menu_btn > svg {
+    position: absolute;
+    top: 2px;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu_btn[data-menu-open='false'] > svg:first-of-type,
+.menu_btn[data-menu-open='true'] > svg:last-of-type {
+    left: 50%;
+}
+
+.menu_btn[data-menu-open='true'] > svg:first-of-type,
+.menu_btn[data-menu-open='false'] > svg:last-of-type {
+    opacity: 0;
+}
+
+.menu_btn[data-menu-open='true'] > svg:first-of-type {
+    left: 0;
+}
+
+.menu_btn[data-menu-open='false'] > svg:last-of-type {
+    left: 100%;
 }
