@@ -34,10 +34,35 @@
     transform: translateX(-50%);
 }
 
-.projects {
+.projects,
+.attributes {
     display: grid;
     justify-items: center;
-    row-gap: 24px;
     margin-block: 120px;
     padding-inline: 24px;
+}
+
+.projects {
+    row-gap: 24px;
+}
+
+.attributes {
+    row-gap: 80px;
+}
+
+.attributes > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+@media screen and (max-width: 480px) {
+    .attributes > div {
+        text-align: center;
+    }
+}
+
+.attributes h3 {
+    margin-bottom: 32px;
 }
