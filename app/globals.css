@@ -5,15 +5,15 @@
   --clr-black: #1D1C1E;
   --clr-peach-pri: #E7816B;
   --clr-peach-sec: #FFAD9B;
-  --font-size-h1: 48px;
+  --font-size-h1: 32px;
   --font-size-h2: 40px;
   --font-size-h3: 20px;
-  --font-size-body: 16px;
+  --font-size-body: 15px;
   --font-size-link: 14px;
-  --line-height-h1: 48px;
+  --line-height-h1: 36px;
   --line-height-h2: 48px;
   --line-height-h3: 26px;
-  --line-height-body: 26px;
+  --line-height-body: 25px;
   --line-height-link: 14px;
   --space-h2: 2px;
   --space-h3: 5px;
@@ -21,6 +21,15 @@
   --font-weight-head: 500;
   --radius-btn: 8px;
   --radius-element: 15px;
+}
+
+@media screen and (min-width: 481px) {
+  :root {
+    --font-size-h1: 48px;
+    --font-size-body: 16px;
+    --line-height-h1: 48px;
+    --line-height-body: 26px;
+  }
 }
 
 *,
@@ -45,10 +54,20 @@ main {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  font-weight: var(--font-weight-head);
+}
+
 a {
   text-decoration: none;
   color: var(--clr-white);
   font-size: var(--font-size-link);
   line-height: var(--line-height-link);
   letter-spacing: var(--space-link);
+}
+
+button {
+  font-family: inherit;
 }

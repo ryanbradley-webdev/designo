@@ -1,0 +1,35 @@
+.hero {
+    position: relative;
+    height: 830px;
+    padding-inline: 24px;
+    padding-top: 80px;
+    color: var(--clr-white);
+    background-image: url(/bg-pattern-hero-home.svg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-color: var(--clr-peach-pri);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+}
+
+.hero > div {
+    display: grid;
+    row-gap: 24px;
+    justify-items: center;
+}
+
+.hero h1 {
+    margin-bottom: 14px;
+}
+
+.hero img {
+    position: absolute;
+    bottom: -375px;
+    left: 50%;
+    transform: translateX(-50%);
+}
