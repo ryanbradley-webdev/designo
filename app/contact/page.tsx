@@ -1,6 +1,6 @@
 import LocationGrid from '@/components/locationGrid/LocationGrid'
-import styles from './page.module.css'
 import ContactForm from '@/components/contactForm/ContactForm'
+import styles from './contact.module.css'
 
 export default function Contact() {
     return (
