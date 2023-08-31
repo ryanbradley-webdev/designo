@@ -20,15 +20,15 @@ export default function ContactCard() {
 
             </div>
 
-            <Button
-                color='white'
+            <Link
+                href='/contact'
             >
-                <Link
-                    href='/contact'
+                <Button
+                    color='white'
                 >
                     GET IN TOUCH
-                </Link>
-            </Button>
+                </Button>
+            </Link>
 
         </div>
     )

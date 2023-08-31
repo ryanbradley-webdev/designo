@@ -4,6 +4,12 @@
     padding-block: 18px;
     border: none;
     border-radius: var(--radius-btn);
+    transition: 0.15s ease-in-out;
+}
+
+.button:is(:hover, :focus) {
+    color: var(--clr-white);
+    background-color: var(--clr-peach-sec);
 }
 
 .button,
