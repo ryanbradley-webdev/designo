@@ -4,6 +4,7 @@ import { useRef, useState } from 'react'
 import Button from '../button/Button'
 import ErrorMsg from './ErrorMsg'
 import styles from './contactForm.module.css'
+import { useForm } from '@/hooks/useForm'
 
 export default function ContactForm() {
     const [nameInvalid, setNameInvalid] = useState(false)
@@ -15,6 +16,12 @@ export default function ContactForm() {
     const emailRef = useRef<HTMLInputElement>(null)
     const phoneRef = useRef<HTMLInputElement>(null)
     const messageRef = useRef<HTMLTextAreaElement>(null)
+
+    const {
+        loading,
+        success,
+        submit
+    } = useForm()
 
     const validateInput = (e?: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         let validateAll = false
@@ -76,14 +83,21 @@ export default function ContactForm() {
             return
         }
 
-        const contactMsg = {
-            name: nameRef.current?.value,
-            email: emailRef.current?.value,
-            phone: phoneRef.current?.value,
-            message: messageRef.current?.value
+        if (
+            nameRef.current &&
+            emailRef.current &&
+            phoneRef.current &&
+            messageRef.current
+        ) {
+            const contactMsg = {
+                name: nameRef.current.value,
+                email: emailRef.current.value,
+                phone: phoneRef.current.value,
+                message: messageRef.current.value
+            }
+    
+            submit(contactMsg)
         }
-
-        console.log(contactMsg)
     }
 
     return (
@@ -176,8 +190,13 @@ export default function ContactForm() {
 
                 <Button
                     color='white'
+                    disabled={loading || success}
                 >
-                    SUBMIT
+                    {
+                        loading ? 'SENDING...' : 
+                        success ? 'SENT' : 
+                        'SUBMIT'
+                    }
                 </Button>
 
             </fieldset>
