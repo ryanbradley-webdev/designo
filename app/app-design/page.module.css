@@ -8,7 +8,22 @@
     display: grid;
     row-gap: 24px;
     margin-inline: auto;
-    max-width: 327px;
+    padding-inline: 24px;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 480px) {
+    .design_links {
+        max-width: 327px;
+        padding-inline: 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .design_links {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
 }
 
 .card_grid {
