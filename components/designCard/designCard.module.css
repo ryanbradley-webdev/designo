@@ -2,6 +2,7 @@
     display: grid;
     border-radius: var(--radius-element);
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card img {
@@ -32,6 +33,20 @@
     background-color: #FDF3F0;
 }
 
+.card > div,
+.card h3 {
+    transition: all 0.15s ease-in-out;
+}
+
+.card:is(:hover, :focus) > div {
+    background-color: var(--clr-peach-pri);
+}
+
 .card h3 {
     color: var(--clr-peach-pri);
+}
+
+.card:is(:hover, :focus) > div,
+.card:is(:hover, :focus) h3 {
+    color: var(--clr-white);
 }
