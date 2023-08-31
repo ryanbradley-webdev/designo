@@ -46,6 +46,19 @@
     row-gap: 24px;
 }
 
+@media screen and (min-width: 769px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        max-width: 1160px;
+        margin-inline: auto;
+    }
+
+    .projects > a:first-child {
+        grid-row: 1 / 3;
+    }
+}
+
 .attributes {
     row-gap: 80px;
 }

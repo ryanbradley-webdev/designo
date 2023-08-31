@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    height: 250px;
     width: 100%;
+    height: 250px;
     border-radius: var(--radius-element);
     background-position: center;
     background-size: cover;
@@ -18,6 +18,14 @@
 @media screen and (max-width: 480px) {
     .link {
         max-width: 327px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .link {
+        min-height: 308px;
+        height: 100%;
+        gap: 24px;
     }
 }
 
