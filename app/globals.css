@@ -53,10 +53,6 @@ body {
   overflow-x: hidden;
 }
 
-main {
-  min-height: 100vh;
-}
-
 h1 {
   font-size: var(--font-size-h1);
   line-height: var(--line-height-h1);
