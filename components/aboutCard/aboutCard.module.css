@@ -5,13 +5,19 @@
     width: 100%;
     background-size: cover;
     background-position: center;
-    overflow: hidden;
 }
 
 .card {
     text-align: center;
     color: var(--clr-dark-grey);
     background-color: #FDF3F0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1160px) {
+    .card {
+        margin-inline: calc(50% - 556px);
+    }
 }
 
 .card h1,
@@ -40,14 +46,91 @@
     background-position: right -150px;
 }
 
+@media screen and (min-width: 480px) {
+    .card {
+        margin-inline: 24px;
+        margin-bottom: 120px;
+        border-radius: var(--radius-element);
+    }
+
+    .card > div {
+        padding-inline: 58px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .card {
+        display: flex;
+        height: 480px;
+        text-align: left;
+        max-width: 1160px;
+    }
+
+    .card > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding-inline: 94px;
+    }
+
+    .card::before {
+        width: 476px;
+        height: 100%;
+        flex-shrink: 0;
+    }
+
+    .card:not(:first-of-type) {
+        height: 640px;
+    }
+
+    .card:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    .card {
+        margin-inline: calc(50vw - 556px);
+    }
+}
+
 .card:has(h1)::before {
-    background-image: url(./images/image-about-hero-mobile.jpg)
+    background-image: url(./images/image-about-hero-mobile.jpg);
 }
 
 .card:nth-of-type(2)::before {
-    background-image: url(./images/image-world-class-talent-mobile.jpg)
+    background-image: url(./images/image-world-class-talent-mobile.jpg);
 }
 
 .card:nth-of-type(3)::before {
-    background-image: url(./images/image-real-deal-mobile.jpg)
+    background-image: url(./images/image-real-deal-mobile.jpg);
+}
+
+@media screen and (min-width: 481px) {
+    .card:has(h1)::before {
+        background-image: url(./images/image-about-hero-tablet.jpg);
+    }
+    
+    .card:nth-of-type(2)::before {
+        background-image: url(./images/image-world-class-talent-tablet.jpg);
+    }
+    
+    .card:nth-of-type(3)::before {
+        background-image: url(./images/image-real-deal-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .card:has(h1)::before {
+        background-image: url(./images/image-about-hero-desktop.jpg);
+    }
+    
+    .card:nth-of-type(2)::before {
+        background-image: url(./images/image-world-class-talent-desktop.jpg);
+    }
+    
+    .card:nth-of-type(3)::before {
+        background-image: url(./images/image-real-deal-desktop.jpg);
+    }
 }

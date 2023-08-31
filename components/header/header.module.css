@@ -11,6 +11,12 @@
     isolation: isolate;
 }
 
+@media screen and (min-width: 696px) {
+    .header {
+        height: 160px;
+    }
+}
+
 @media screen and (min-width: 1160px) {
     .header {
         padding-inline: calc(50vw - 556px);
