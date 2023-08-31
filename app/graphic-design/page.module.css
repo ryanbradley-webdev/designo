@@ -8,7 +8,18 @@
     display: grid;
     row-gap: 24px;
     margin-inline: auto;
-    max-width: 327px;
+}
+
+@media screen and (max-width: 480px) {
+    .design_links {
+        max-width: 327px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .design_links {
+        padding-inline: 24px;
+    }
 }
 
 .card_grid {
