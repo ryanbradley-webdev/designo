@@ -21,13 +21,13 @@
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 769px) {
+@media screen and (min-width: 481px) and (max-width: 899px) {
     .link {
         height: 200px;
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     .link {
         min-height: 308px;
         height: 100%;
@@ -69,7 +69,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     .link[data-variant='web'] {
         background-image: url(./background-images/image-web-design-desktop.jpg);
     }

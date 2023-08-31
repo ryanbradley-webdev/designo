@@ -76,12 +76,18 @@ export default function Home() {
 
         <div>
 
-          <Image
-            src='/illustration-passionate.svg'
-            alt=''
-            height={202}
-            width={202}
-          />
+          <div
+            className={styles.img_container}
+          >
+
+            <Image
+              src='/illustration-passionate.svg'
+              alt=''
+              height={202}
+              width={202}
+            />
+
+          </div>
 
           <div>
 
@@ -99,12 +105,18 @@ export default function Home() {
 
         <div>
 
-          <Image
-            src='/illustration-resourceful.svg'
-            alt=''
-            height={202}
-            width={202}
-          />
+          <div
+            className={styles.img_container}
+          >
+
+            <Image
+              src='/illustration-resourceful.svg'
+              alt=''
+              height={202}
+              width={202}
+            />
+
+          </div>
 
           <div>
 
@@ -122,12 +134,18 @@ export default function Home() {
 
         <div>
 
-          <Image
-            src='/illustration-friendly.svg'
-            alt=''
-            height={202}
-            width={202}
-          />
+          <div
+            className={styles.img_container}
+          >
+
+            <Image
+              src='/illustration-friendly.svg'
+              alt=''
+              height={202}
+              width={202}
+            />
+
+          </div>
 
           <div>
 

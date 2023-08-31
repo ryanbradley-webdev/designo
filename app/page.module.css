@@ -39,19 +39,19 @@
     display: grid;
     justify-items: center;
     margin-block: 120px;
+    margin-inline: auto;
     padding-inline: 24px;
+    max-width: 1160px;
 }
 
 .projects {
     row-gap: 24px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
     .projects {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
-        max-width: 1160px;
-        margin-inline: auto;
     }
 
     .projects > a:first-child {
@@ -64,17 +64,48 @@
     row-gap: 80px;
 }
 
+@media screen and (min-width: 900px) {
+    .attributes {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+}
+
 .attributes > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 48px;
+    text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-    .attributes > div {
-        text-align: center;
+@media screen and (min-width: 647px) and (max-width: 899px) {
+    .attributes {
+        row-gap: 32px;
     }
+
+    .attributes > div {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+.img_container {
+    display: flex;
+    height: fit-content;
+    border-radius: 100%;
+}
+
+.attributes > div:first-of-type .img_container {
+    background-image: linear-gradient(to right, #5f02021a, transparent);
+}
+
+.attributes > div:nth-child(2) .img_container {
+    background-image: linear-gradient(to top, #5f02021a, transparent);
+}
+
+.attributes > div:last-of-type .img_container {
+    background-image: linear-gradient(to bottom, #5f02021a, transparent);
 }
 
 .attributes h3 {
