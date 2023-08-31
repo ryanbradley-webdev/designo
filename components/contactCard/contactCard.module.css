@@ -13,6 +13,12 @@
     border-radius: var(--radius-element);
 }
 
+@media screen and (min-width: 1160px) {
+    .card {
+        margin-inline: calc(50% - 556px);
+    }    
+}
+
 .card::after {
     content: '';
     position: absolute;
@@ -22,6 +28,13 @@
     width: calc(100% + 48px);
     background-color: var(--clr-black);
     z-index: -1;
+}
+
+@media screen and (min-width: 1160px) {
+    .card::after {
+        left: calc(-1 * calc(50vw - 556px));
+        width: 100vw;
+    }
 }
 
 .card h2 {
