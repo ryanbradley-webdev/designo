@@ -12,12 +12,16 @@ export default function Footer() {
                 className={styles.heading}
             >
 
-                <Image
-                    src='/logo-light.png'
-                    alt='Designo'
-                    height={27}
-                    width={202}
-                />
+                <Link
+                    href='/'
+                >
+                    <Image
+                        src='/logo-light.png'
+                        alt='Designo'
+                        height={27}
+                        width={202}
+                    />
+                </Link>
 
                 <nav>
 

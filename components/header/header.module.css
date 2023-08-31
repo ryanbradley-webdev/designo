@@ -19,6 +19,10 @@
     z-index: -1;
 }
 
+.header > a {
+    display: flex;
+}
+
 .menu_btn {
     position: relative;
     border: none;
