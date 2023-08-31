@@ -15,14 +15,21 @@
 
 @media screen and (min-width: 481px) {
     .hero {
+        padding-inline: 95px;
         margin-inline: 24px;
         border-radius: var(--radius-element);
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 945px) {
     .hero {
+        display: grid;
+        grid-template-columns: 1fr 265px;
+        column-gap: 24px;
+        padding-top: 0;
+        height: 640px;
         text-align: left;
+        background-position: right;
     }
 }
 
@@ -38,16 +45,43 @@
     justify-items: center;
 }
 
+@media screen and (min-width: 945px) {
+    .hero > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        justify-content: center;
+        height: 640px;
+        max-width: 500px;
+    }
+
+    .hero p {
+        max-width: 445px;
+    }
+}
+
 .hero h1 {
     margin-bottom: 14px;
 }
 
 .hero img {
-    position: absolute;
-    bottom: -375px;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-self: center;
     pointer-events: none;
+}
+
+@media screen and (max-width: 944px) {
+    .hero img {
+        position: absolute;
+        bottom: -375px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 945px) {
+    .hero img {
+        margin-top: -20px;
+    }
 }
 
 .projects,
