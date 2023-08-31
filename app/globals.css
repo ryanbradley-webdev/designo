@@ -79,7 +79,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: var(--clr-white);
+  color: inherit;
   font-size: var(--font-size-link);
   line-height: var(--line-height-link);
   letter-spacing: var(--space-link);

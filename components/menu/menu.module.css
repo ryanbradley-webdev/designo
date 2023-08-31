@@ -1,42 +1,52 @@
 .menu {
-    position: absolute;
-    top: -150px;
-    left: 0;
-    display: grid;
-    row-gap: 32px;
-    width: 100%;
-    padding-inline: 24px;
-    padding-block: 48px;
-    background-color: var(--clr-black);
-    z-index: -5;
-    transition: top 0.2s ease-in-out;
+    display: flex;
+    gap: 42px;
+    color: var(--clr-dark-grey);
 }
 
-.menu[aria-hidden='false'] {
-    top: 96px;
+.menu > a:is(:hover, :focus) {
+    text-decoration: underline;
 }
 
-.menu::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    top: 96px;
-    background-color: #00000052;
-    z-index: 3;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease-in-out;
-}
+@media screen and (max-width: 695px) {
+    .menu {
+        position: absolute;
+        top: -150px;
+        left: 0;
+        display: grid;
+        row-gap: 32px;
+        width: 100%;
+        padding-inline: 24px;
+        padding-block: 48px;
+        background-color: var(--clr-black);
+        z-index: -5;
+        transition: top 0.2s ease-in-out;
+    }
+    
+    .menu[aria-hidden='false'] {
+        top: 96px;
+    }
+    
+    .menu::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        top: 96px;
+        background-color: #00000052;
+        z-index: 3;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease-in-out;
+    }
+    
+    .menu[aria-hidden='false']::after {
+        opacity: 1;
+    }
+    
+    .menu > a {
+        z-index: 5;
+    }
 
-.menu[aria-hidden='false']::after {
-    opacity: 1;
-}
-
-.menu > a {
-    z-index: 5;
-}
-
-@media screen and (max-width: 480px) {
     .menu > a {
         font-size: 24px;
         line-height: 25px;

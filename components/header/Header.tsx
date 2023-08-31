@@ -7,9 +7,12 @@ import { useState } from 'react'
 import CloseIcon from '../icons/CloseIcon'
 import Menu from '../menu/Menu'
 import Link from 'next/link'
+import { useMediaQuery } from 'usehooks-ts'
 
 export default function Header() {
     const [menuVisibile, setMenuVisible] = useState(false)
+
+    const isMobile = useMediaQuery('(max-width: 695px)')
 
     const toggleMenu = () => {
         setMenuVisible(!menuVisibile)
@@ -31,20 +34,22 @@ export default function Header() {
                 />
             </Link>
 
-            <button
-                className={styles.menu_btn}
-                onClick={toggleMenu}
-                data-menu-open={menuVisibile}
-            >
+            {isMobile && (
+                <button
+                    className={styles.menu_btn}
+                    onClick={toggleMenu}
+                    data-menu-open={menuVisibile}
+                >
 
-                <Burger />
+                    <Burger />
 
-                <CloseIcon />
+                    <CloseIcon />
 
-            </button>
+                </button>
+            )}
 
             <Menu
-                isVisible={menuVisibile}
+                isVisible={!isMobile || menuVisibile}
                 toggleMenu={toggleMenu}
             />
 

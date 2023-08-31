@@ -11,6 +11,12 @@
     isolation: isolate;
 }
 
+@media screen and (min-width: 1160px) {
+    .header {
+        padding-inline: calc(50vw - 556px);
+    }
+}
+
 .header::after {
     content: '';
     position: absolute;
