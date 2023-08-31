@@ -21,6 +21,12 @@
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 769px) {
+    .link {
+        height: 200px;
+    }
+}
+
 @media screen and (min-width: 769px) {
     .link {
         min-height: 308px;
@@ -47,6 +53,34 @@
 
 .link[data-variant='graphic'] {
     background-image: url(./background-images/image-graphic-design-mobile.jpg);
+}
+
+@media screen and (min-width: 481px) {
+    .link[data-variant='web'] {
+        background-image: url(./background-images/image-web-design-tablet.jpg);
+    }
+    
+    .link[data-variant='app'] {
+        background-image: url(./background-images/image-app-design-tablet.jpg);
+    }
+    
+    .link[data-variant='graphic'] {
+        background-image: url(./background-images/image-graphic-design-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .link[data-variant='web'] {
+        background-image: url(./background-images/image-web-design-desktop.jpg);
+    }
+    
+    .link[data-variant='app'] {
+        background-image: url(./background-images/image-app-design-desktop.jpg);
+    }
+    
+    .link[data-variant='graphic'] {
+        background-image: url(./background-images/image-graphic-design-desktop.jpg);
+    }
 }
 
 .link p {
