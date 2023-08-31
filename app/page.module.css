@@ -2,7 +2,7 @@
     position: relative;
     height: 830px;
     padding-inline: 24px;
-    padding-top: 80px;
+    padding-top: 40px;
     max-width: 1160px;
     color: var(--clr-white);
     background-image: url(/bg-pattern-hero-home.svg);
@@ -15,7 +15,7 @@
 
 @media screen and (min-width: 481px) {
     .hero {
-        padding-inline: 95px;
+        padding-inline: 20px;
         margin-inline: 24px;
         border-radius: var(--radius-element);
     }
@@ -27,6 +27,7 @@
         grid-template-columns: 1fr 265px;
         column-gap: 24px;
         padding-top: 0;
+        padding-inline: 95px;
         height: 640px;
         text-align: left;
         background-position: right;
@@ -43,6 +44,13 @@
     display: grid;
     row-gap: 24px;
     justify-items: center;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 944px) {
+    .hero > div {
+        margin-inline: auto;
+    }
 }
 
 @media screen and (min-width: 945px) {
@@ -52,7 +60,6 @@
         row-gap: 40px;
         justify-content: center;
         height: 640px;
-        max-width: 500px;
     }
 
     .hero p {
@@ -62,6 +69,10 @@
 
 .hero h1 {
     margin-bottom: 14px;
+}
+
+.hero a {
+    width: fit-content;
 }
 
 .hero img {

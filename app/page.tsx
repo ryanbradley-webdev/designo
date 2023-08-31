@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import Image from 'next/image'
 import ProjectLink from '@/components/projectLink/ProjectLink'
 import ContactCard from '@/components/contactCard/ContactCard'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -26,11 +27,17 @@ export default function Home() {
 
           </div>
 
-          <Button
-            color='white'
+          <Link
+            href='/about'
           >
-            LEARN MORE
-          </Button>
+
+            <Button
+              color='white'
+            >
+              LEARN MORE
+            </Button>
+
+          </Link>
 
         </div>
 
