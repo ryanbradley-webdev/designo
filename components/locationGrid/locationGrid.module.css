@@ -31,3 +31,20 @@
     display: block;
     margin-inline: auto;
 }
+
+.img_container {
+    display: flex;
+    border-radius: 100%;
+}
+
+.location_grid > div:first-of-type .img_container {
+    background-image: linear-gradient(to bottom, #5f02021a, transparent);
+}
+
+.location_grid > div:nth-child(2) .img_container {
+    background-image: linear-gradient(to right, #5f02021a, transparent);
+}
+
+.location_grid > div:last-of-type .img_container {
+    background-image: linear-gradient(to top, #5f02021a, transparent);
+}

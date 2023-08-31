@@ -11,12 +11,18 @@ export default function LocationGrid() {
 
             <div>
 
-                <Image
-                    src='/illustration-canada.svg'
-                    alt=''
-                    height={202}
-                    width={202}
-                />
+                <div
+                    className={styles.img_container}
+                >
+
+                    <Image
+                        src='/illustration-canada.svg'
+                        alt=''
+                        height={202}
+                        width={202}
+                    />
+
+                </div>
                 
                 <div>
 
@@ -40,12 +46,18 @@ export default function LocationGrid() {
 
             <div>
 
-                <Image
-                    src='/illustration-australia.svg'
-                    alt=''
-                    height={202}
-                    width={202}
-                />
+                <div
+                    className={styles.img_container}
+                >
+
+                    <Image
+                        src='/illustration-australia.svg'
+                        alt=''
+                        height={202}
+                        width={202}
+                    />
+
+                </div>
 
                 <div>
 
@@ -69,12 +81,18 @@ export default function LocationGrid() {
 
             <div>
 
-                <Image
-                    src='/illustration-united-kingdom.svg'
-                    alt=''
-                    height={202}
-                    width={202}
-                />
+                <div
+                    className={styles.img_container}
+                >
+
+                    <Image
+                        src='/illustration-united-kingdom.svg'
+                        alt=''
+                        height={202}
+                        width={202}
+                    />
+
+                </div>
 
                 <div>
 
