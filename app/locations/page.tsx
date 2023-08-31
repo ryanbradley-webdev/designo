@@ -6,7 +6,7 @@ import ContactCard from '@/components/contactCard/ContactCard'
 import styles from './page.module.css'
 
 export default function Locations() {
-    const largeScreen = useMediaQuery('(min-width: 769px)')
+    const largeScreen = useMediaQuery('(min-width: 967px)')
 
     return (
         <main
